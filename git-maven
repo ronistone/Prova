@@ -1,0 +1,12 @@
+Criação do projeto maven atraves do netbeans
+git init
+touch README.md
+git add README.md
+git commit -m "Inicialização"
+git remote add origin https://github.com/ronistone/Prova.git
+git push origin master
+mysql -u root -p
+criação do banco de dados prova
+
+
+
