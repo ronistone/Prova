@@ -1,0 +1,2 @@
+- Crie um banco com o nome prova
+- na pasta api-spring-hibernate execute usando mvn spring-boot:run
