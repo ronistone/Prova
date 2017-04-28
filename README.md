@@ -1,2 +1,2 @@
-- Crie um banco com o nome prova
+- Crie um banco de dados mysql com o nome prova com um usuário root e senha 123
 - na pasta api-spring-hibernate execute usando mvn spring-boot:run
