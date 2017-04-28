@@ -43,4 +43,27 @@ Arquivos não monitorados:
 
 nenhuma modificação adicionada à submissão (utilize "git add" e/ou "git commit -a")
 
+git log
+commit 0f5639b5038f6511cf456fcc35a39c4ce4ab736d
+Author: Ronistone <ronistonejunior@gmail.com>
+Date:   Fri Apr 28 15:37:04 2017 -0300
+
+    Update
+
+commit ed799a57ca38ff0a27df33fb317fc1fb1eb96c97
+Author: Ronistone <ronistonejunior@gmail.com>
+Date:   Fri Apr 28 14:52:31 2017 -0300
+
+    add git-maven.txt
+
+commit c19ecd4a1c0113a70f1eb2a4527286a240d8868b
+Author: Ronistone <ronistonejunior@gmail.com>
+Date:   Fri Apr 28 14:48:31 2017 -0300
+
+    Inicialização
+
+git branch -d teste
+Deleted branch teste (was ed799a5).
+
+
 

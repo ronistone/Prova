@@ -8,7 +8,9 @@ package br.com.algartelecom.controllers;
 import br.com.algartelecom.models.Pessoa;
 import br.com.algartelecom.repository.PessoaRepository;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -31,7 +33,7 @@ public class PessoaController {
     PessoaRepository repository;
     
     @RequestMapping(method = RequestMethod.GET)
-    public ResponseEntity<List<Pessoa>> get(@RequestParam(value = "nome",required=false) String nome,
+    public ResponseEntity<?> get(@RequestParam(value = "nome",required=false) String nome,
                             @RequestParam(value = "cpf",required=false) String cpf,
                             @RequestParam(value = "telefone",required=false) String telefone){
         try{
@@ -45,9 +47,14 @@ public class PessoaController {
             else if(telefone!=null){
                 p = repository.findByTelefone(telefone);
             }
-            return new ResponseEntity<>(p,HttpStatus.OK);
+            Map<String,String> m = new HashMap<>();
+            m.put("status", "1");
+            m.put("result", p.toString());
+            return new ResponseEntity<>(m,HttpStatus.OK);
         }catch(Exception e){
-            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+            Map<String,String> m = new HashMap<>();
+            m.put("status", "0");
+            return new ResponseEntity<>(m,HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
     
@@ -56,18 +63,28 @@ public class PessoaController {
         
         try{
             repository.save(p);
-            return new ResponseEntity<>(HttpStatus.OK);
+            Map<String,String> m = new HashMap<>();
+            m.put("status", "1");
+            m.put("result", p.toString());
+            return new ResponseEntity<>(m,HttpStatus.OK);
         }catch(Exception e){
-            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+            Map<String,String> m = new HashMap<>();
+            m.put("status", "0");
+            return new ResponseEntity<>(m,HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
     @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
-    public ResponseEntity<Pessoa> put(@RequestBody Pessoa p, @PathVariable Long id){
+    public ResponseEntity<?> put(@RequestBody Pessoa p, @PathVariable Long id){
         try{
             p.setId(id);
             repository.save(p);
-            return new ResponseEntity<>(HttpStatus.OK);
+            Map<String,String> m = new HashMap<>();
+            m.put("status", "1");
+            m.put("result", p.toString());
+            return new ResponseEntity<>(m,HttpStatus.OK);
         }catch(Exception e){
+            Map<String,String> m = new HashMap<>();
+            m.put("status", "0");
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }

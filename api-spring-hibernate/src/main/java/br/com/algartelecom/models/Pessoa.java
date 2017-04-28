@@ -78,4 +78,7 @@ public class Pessoa implements Serializable {
     public void setTelefone(Set<String> telefone) {
         this.telefone = telefone;
     }
+    public String toString(){
+        return "{" + "id:" + id + ", nome: "+ nome +", cpf: "+cpf+", sexo: "+ sexo+", telefone: "+telefone.toString()+"}";
+    }
 }

@@ -4,12 +4,12 @@
   <groupId>br.com.algartelecom.planodeformacao</groupId>
   <artifactId>api-spring-hibernate</artifactId>
   <packaging>jar</packaging>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.0-final</version>
   <name>Api Spring-Hibernate - Desafio do plano de formacao</name>
   <url>http://maven.apache.org</url>
   <parent>
       <groupId>br.com.algartelecom</groupId>
       <artifactId>parent-pom</artifactId>
-      <version>0.0.1-SNAPSHOT</version>
+      <version>1.0.0-final</version>
   </parent>
 </project>
