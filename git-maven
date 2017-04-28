@@ -7,6 +7,40 @@ git remote add origin https://github.com/ronistone/Prova.git
 git push origin master
 mysql -u root -p
 criação do banco de dados prova
+git add git-maven
+git commit -m "add git-maven"
+git push origin master
 
+
+git add .
+git commit -m "projeto criado"
+git push origin master
+
+mvn install
+
+mkdir vazio
+touch .gitignore
+
+
+git checkout -b teste
+git checkout master
+
+git status
+No ramo master
+Changes not staged for commit:
+  (utilize "git add <arquivo>..." para atualizar o que será submetido)
+  (utilize "git checkout -- <arquivo>..." para descartar mudanças no diretório de trabalho)
+
+	modified:   git-maven
+
+Arquivos não monitorados:
+  (utilize "git add <arquivo>..." para incluir o que será submetido)
+
+	.gitignore
+	.mvn/
+	api-spring-hibernate/
+	pom.xml
+
+nenhuma modificação adicionada à submissão (utilize "git add" e/ou "git commit -a")
 
 
