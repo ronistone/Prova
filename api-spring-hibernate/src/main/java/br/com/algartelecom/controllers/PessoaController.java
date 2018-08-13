@@ -5,12 +5,15 @@
  */
 package br.com.algartelecom.controllers;
 
+import br.com.algartelecom.SpringAPIApplication;
 import br.com.algartelecom.models.Pessoa;
 import br.com.algartelecom.repository.PessoaRepository;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.logging.Logger;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -28,7 +31,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(value = "/api")
 public class PessoaController {
-    
+
+    private static Logger LOGGER = Logger.getLogger(PessoaController.class.getName());
+
     @Autowired
     PessoaRepository repository;
     

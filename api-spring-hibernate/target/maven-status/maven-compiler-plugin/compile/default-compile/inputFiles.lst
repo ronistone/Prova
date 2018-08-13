@@ -1,4 +1,4 @@
-/home/ronistone/Documentos/Algar/Java/prova/parent-pom/api-spring-hibernate/src/main/java/br/com/algartelecom/repository/PessoaRepository.java
-/home/ronistone/Documentos/Algar/Java/prova/parent-pom/api-spring-hibernate/src/main/java/br/com/algartelecom/models/Pessoa.java
-/home/ronistone/Documentos/Algar/Java/prova/parent-pom/api-spring-hibernate/src/main/java/br/com/algartelecom/SpringAPIApplication.java
-/home/ronistone/Documentos/Algar/Java/prova/parent-pom/api-spring-hibernate/src/main/java/br/com/algartelecom/controllers/PessoaController.java
+/home/rgrj/Workspace/Prova/api-spring-hibernate/src/main/java/br/com/algartelecom/models/Pessoa.java
+/home/rgrj/Workspace/Prova/api-spring-hibernate/src/main/java/br/com/algartelecom/repository/PessoaRepository.java
+/home/rgrj/Workspace/Prova/api-spring-hibernate/src/main/java/br/com/algartelecom/controllers/PessoaController.java
+/home/rgrj/Workspace/Prova/api-spring-hibernate/src/main/java/br/com/algartelecom/SpringAPIApplication.java

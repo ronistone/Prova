@@ -1,0 +1,4 @@
+br/com/algartelecom/controllers/PessoaController.class
+br/com/algartelecom/repository/PessoaRepository.class
+br/com/algartelecom/SpringAPIApplication.class
+br/com/algartelecom/models/Pessoa.class

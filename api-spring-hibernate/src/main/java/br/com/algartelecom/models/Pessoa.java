@@ -1,7 +1,10 @@
 package br.com.algartelecom.models;
 
+import br.com.algartelecom.SpringAPIApplication;
+
 import java.io.Serializable;
 import java.util.Set;
+import java.util.logging.Logger;
 import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -19,7 +22,10 @@ import javax.persistence.Id;
  */
 @Entity
 public class Pessoa implements Serializable {
-    
+
+    private static Logger LOGGER = Logger.getLogger(Pessoa.class.getName());
+
+
     @Id
     @GeneratedValue
     private Long id;
