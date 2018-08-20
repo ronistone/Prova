@@ -12,16 +12,8 @@ public class Agent {
 
         transform(instrumentation);
 
-        //transformClass(instrumentation);
     }
 
-    private static void transformClass(Instrumentation instrumentation) {
-
-        for(Class c: instrumentation.getAllLoadedClasses()){
-           // transform(c, c.getClassLoader(), instrumentation);
-        }
-
-    }
 
     private static void transform(Instrumentation instrumentation) {
 

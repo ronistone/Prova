@@ -1,4 +1,4 @@
-/home/rgrj/Workspace/Prova/api-spring-hibernate/src/main/java/br/com/algartelecom/models/Pessoa.java
-/home/rgrj/Workspace/Prova/api-spring-hibernate/src/main/java/br/com/algartelecom/repository/PessoaRepository.java
-/home/rgrj/Workspace/Prova/api-spring-hibernate/src/main/java/br/com/algartelecom/controllers/PessoaController.java
-/home/rgrj/Workspace/Prova/api-spring-hibernate/src/main/java/br/com/algartelecom/SpringAPIApplication.java
+/home/rgrj/Workspace/Others/Prova/api-spring-hibernate/src/main/java/br/com/algartelecom/repository/PessoaRepository.java
+/home/rgrj/Workspace/Others/Prova/api-spring-hibernate/src/main/java/br/com/algartelecom/controllers/PessoaController.java
+/home/rgrj/Workspace/Others/Prova/api-spring-hibernate/src/main/java/br/com/algartelecom/SpringAPIApplication.java
+/home/rgrj/Workspace/Others/Prova/api-spring-hibernate/src/main/java/br/com/algartelecom/models/Pessoa.java

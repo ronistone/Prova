@@ -10,5 +10,9 @@
         <module name="MyAgent" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api-spring-hibernate" target="1.8" />
+      <module name="parent-pom" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

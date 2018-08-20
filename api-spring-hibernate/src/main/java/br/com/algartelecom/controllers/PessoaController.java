@@ -5,7 +5,6 @@
  */
 package br.com.algartelecom.controllers;
 
-import br.com.algartelecom.SpringAPIApplication;
 import br.com.algartelecom.models.Pessoa;
 import br.com.algartelecom.repository.PessoaRepository;
 import java.util.ArrayList;
@@ -42,23 +41,12 @@ public class PessoaController {
                             @RequestParam(value = "cpf",required=false) String cpf,
                             @RequestParam(value = "telefone",required=false) String telefone){
         try{
-            List<Pessoa> p = new ArrayList<>();
-            if(nome!=null){
-                p = repository.findByNome(nome);
-            }
-            else if(cpf!=null){
-                p = repository.findByCpf(cpf);
-            }
-            else if(telefone!=null){
-                p = repository.findByTelefone(telefone);
-            }
+            List<Pessoa> p = repository.findAll();
             Map<String,String> m = new HashMap<>();
-            m.put("status", "1");
             m.put("result", p.toString());
-            return new ResponseEntity<>(m,HttpStatus.OK);
+            return new ResponseEntity<>(m, HttpStatus.ACCEPTED);
         }catch(Exception e){
             Map<String,String> m = new HashMap<>();
-            m.put("status", "0");
             return new ResponseEntity<>(m,HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
