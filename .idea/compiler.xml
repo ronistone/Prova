@@ -12,7 +12,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="api-spring-hibernate" target="1.8" />
-      <module name="parent-pom" target="1.8" />
+      <module name="parent-pom" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
