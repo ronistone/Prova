@@ -1,2 +1,8 @@
-- Crie um banco de dados mysql com o nome prova com um usuário root e senha 123
-- na pasta api-spring-hibernate execute usando mvn spring-boot:run
+- Crie um banco de dados mysql
+- mvn spring-boot:run
+
+
+- Documentação da API New Relic
+    - https://docs.newrelic.com/docs/agents/java-agent/custom-instrumentation/java-custom-instrumentation
+
+
