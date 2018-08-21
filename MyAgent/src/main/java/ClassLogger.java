@@ -8,8 +8,6 @@ import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.lang.instrument.ClassFileTransformer;
 import java.security.ProtectionDomain;
-import java.util.Iterator;
-import java.util.Vector;
 import java.util.logging.Logger;
 
 public class ClassLogger implements ClassFileTransformer {
@@ -23,13 +21,11 @@ public class ClassLogger implements ClassFileTransformer {
         String finalClassName = s.replaceAll("/", ".");
         byte[] byteCode = bytes.clone();
 
-        if(finalClassName.startsWith("br.com.algartelecom") && !finalClassName.contains("$")){
+        if(finalClassName.startsWith("br.com.algartelecom")){
             try {
                 CtClass cc = getClass(byteCode);
 
                 for (CtMethod m : cc.getDeclaredMethods()) {
-//                    if(m.isEmpty())
-//                        continue;
 
                     insertMetricCode(m);
 
