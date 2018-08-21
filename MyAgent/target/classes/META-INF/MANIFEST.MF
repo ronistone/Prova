@@ -1,0 +1,6 @@
+Agent-Class: Agent
+Can-Redefine-Classes: true
+Can-Retransform-Classes: true
+Premain-Class: Agent
+Main-Class: Agent
+Boot-Class-Path: lib/javassist-3.12.0.GA.jar
